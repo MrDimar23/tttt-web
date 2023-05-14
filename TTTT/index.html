@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+ 
+   <title>TTTT-Travel Website</title>
+</head>
+<body>
+   <nav class="nav">
+      <div class="nav-menu flex-row">
+         <div class="nav-brand">
+            <h2 data-text="TwoTeaTwoTwo">TwoTeaTwoTwo</h2>
+         </div>
+         <div class="toggle-collapse">
+            <div class="toggle-icons">
+               <i class='bx bx-menu'></i>
+            </div>
+         </div>
+         <div>
+            <ul class="nav-items">
+               <li class="nav-link">
+                  <a href="#">Home</a>
+               </li>
+               <li class="nav-link">
+                  <a href="#">Countries</a>
+               </li>
+               <li class="nav-link">
+                  <a href="#">Gallery</a>
+               </li>
+               <li class="nav-link">
+                  <a href="#">Contact Us</a>
+               </li>
+            </ul>
+         </div>
+         <div class="form-reg">
+            <button class="btnLogin">Login</button>
+         </div>
+         <div class="social text-gray">
+            <a href="https://www.youtube.com/"><i class='bx bxl-facebook'></i></i></a>
+            <a href="https://www.youtube.com/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.youtube.com/"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.youtube.com/"><i class='bx bxl-youtube' ></i></a>
+         </div>
+      </div>
+   </nav>
+   <main>
+      <section class="site-title">
+         <div class="site-background">
+            <h1 class="site-info">Tours & Travel <br>
+            Amazing Place on Earth</h1>
+         </div>
+         <div class="wrapper">
+            <span class="icon-close"><i class='bx bx-window-close'></i></span>
+            <div class="form-login-box">
+               <h2>Login</h2>
+               <form action="#">
+                  <div class="input-box">
+                     <span class="icon"><i class='bx bx-envelope'></i></span>
+                     <input type="email" required>
+                     <label>Email</label>
+                  </div>
+                  <div class="input-box">
+                     <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                     <input type="password" required>
+                     <label>Password</label>
+                  </div>
+                  <div class="remember-forgot">
+                     <label><input type="checkbox">Remember Me</label>
+                     <a href="#">Forgot Password</a>
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+                  <div class="login-register">
+                     <p>Don't have an account ? <a href="#" class="register-link">Register</a></p>
+                  </div>
+               </form>
+            </div>
+            <div class="form-register-box">
+               <h2>Register</h2>
+               <form action="#">
+                  <div class="input-box">
+                     <span class="icon"><i class='bx bxs-user'></i></i></span>
+                     <input type="text" required>
+                     <label>Username</label>
+                  </div>
+                  <div class="input-box">
+                     <span class="icon"><i class='bx bx-envelope'></i></span>
+                     <input type="email" required>
+                     <label>Email</label>
+                  </div>
+                  <div class="input-box">
+                     <span class="icon"><i class='bx bx-lock-alt'></i></span>
+                     <input type="password" required>
+                     <label>Password</label>
+                  </div>
+                  <div class="remember-forgot">
+                     <label><input type="checkbox">I agree to the terms & conditions</label>
+                  </div>
+                  <button type="submit" class="btn">Register</button>
+                  <div class="login-register">
+                     <p>Already have an account ? <a href="#" class="login-link">Login</a></p>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <section class="container">
+         <div class="site-content">
+            <div class="video-container">
+               <h2 class="video-name">Top 10 most popular places in the world in 2023</h2>
+               <video src="/video/top10in2023.mp4"controls></video>
+            </div>
+            <aside class="sidebar">
+               <div class="player">
+                  <div class="wrapperplay">
+                     <div class="details">
+                        <div class="now-playing">PLAYING x OF</div>
+                        <div class="track-art"></div>
+                        <div class="track-name">Track Name</div>
+                        <div class="track-artist">Track Artist</div>
+                     </div>
+
+                     <div class="slider-container">
+                        <div class="current-time">00:00</div>
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" oncange="seekTo()">
+                        <div class="total-duration">00:00</div>
+                     </div>
+                     <div class="slider-container">
+                     </div>
+                     <div class="buttons">
+                        <div class="random-track" onclick="randomTrack()">
+                           <i class='bx bx-transfer-alt'></i>
+                        </div>
+                        <div class="prew-track" onclick="prewTrack()">
+                           <i class='bx bx-skip-previous'></i>
+                        </div>
+                        <div class="playpause-track" onclick="playpauseTrack()">
+                           <i class='bx bx-play-circle' ></i>
+                        </div>
+                        <div class="next-track" onclick="nextTrack()">
+                           <i class='bx bx-skip-next' ></i>
+                        </div>
+                        <div class="repeat-track" onclick="repeatTrack()">
+                           <i class='bx bx-revision'></i>
+                        </div>
+                     <div id="wave">
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                        <span class="stroke"></span>
+                     </div>
+                     </div>
+                  </div>   
+               </div>
+            </aside>
+         </div>
+      </section>
+   </main>
+<script src="js/login.js"></script>
+<script src="js/audioplayer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
